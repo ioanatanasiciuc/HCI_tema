@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Scholarly HTML for HCI Homework - Learn Dafny</title>
+  <link rel="stylesheet" href="scholarly.css">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+  <header>
+    <h1>Scholarly HTML for HCI Homework - Learn Dafny</h1>
+  </header>
+
+  <section>
+    <ol>
+      <dt>Authors</dt>
+      <li property="schema:author" typeof="sa:ContributorRole">
+        <span typeof="schema:Person">
+          <meta property="schema:givenName" content="Ioana">
+          <meta property="schema:familyName" content="Tanasiciuc">
+          <span property="schema:name">Ioana Tanasiciuc</span>
+        </span>
+      </li>
+    </ol>
+  </section>
+
+
+  <section id="Introduction">
+    <h2>1. Introduction</h2>
+    <section id="Scope">
+      <h3>1.1 Scope</h3>
+      <p>The scope of this document is to present and explain certain characteristics
+        of the "Learn Dafny" website. These will be the application's purpose, it's User Interface
+        and the way different users can interact with it.
+      </p>
+    </section>
+    <section id="Document Conventions">
+      <h3>1.2 Document Conventions</h3>
+      <p>This document was created using the "IEEE for System Requirement Specification Documents" template and the
+        "Scholarly HTML" specifications.</p>
+    </section>
+
+
+    <section typeof="sa:Results" id="General Description">
+      <h2>2. General Description</h2>
+      <section id="Product Perspective">
+        <h3>2.1 Product perspective</h3>
+        <p>
+          "Learn Dafny" is a website built for everyone that wants to learn and experience
+          a new programming language and also be able to save their progress and all of their
+          projects in a single place by creating an account.
+        </p>
+      </section>
+      <section id="Product Functions">
+        <h3>2.2 Product functions</h3>
+        <p>
+          Compiler Page
+        </p>
+        <ul>
+          <li>
+            Edit current file
+          </li>
+          <li>
+            Switch to a different file
+          </li>
+          <li>
+            Save program on your account's files
+          </li>
+          <li>
+            Save program on your local computer
+          </li>
+          <li>
+            Create a new program file
+          </li>
+          <li>
+            Run and compile current file
+          </li>
+          <li>
+            Check Dafny documentation
+          </li>
+        </ul>
+        <p>
+          Log In / Sign Up Page
+        </p>
+        <ul>
+          <li>
+            Log into an account using a username and a password
+          </li>
+          <li>
+            Create a new account and log in
+          </li>
+          <li>
+            Change the password using an email associated with an account
+          </li>
+        </ul>
+        <p>
+          My files Page
+        </p>
+        <ul>
+          <li>
+            See all of the saved files
+          </li>
+          <li>
+            Create a new empty file
+          </li>
+        </ul>
+        <p>Settings Page</p>
+        <ul>
+          <li>
+            Change username
+          </li>
+          <li>
+            Change email
+          </li>
+          <li>
+            Change password
+          </li>
+        </ul>
+      </section>
+
+      <section id="User Classes and Characteristics">
+        <h3>2.3 User Classes and Characteristics</h3>
+        <ul>
+          <li>
+            Users that have little to no programming experience and want to start out by learning Dafny
+          </li>
+          <li>
+            Users that already have some programming skills and want to expand their knowledge
+          </li>
+          <li>
+            Users that have worked with Dafny before and want to learn something new or just want
+            a new working environment
+          </li>
+        </ul>
+      </section>
+
+      <section id="Application Architecture">
+
+        <h2>3. Application Architecture</h2>
+
+        <section id="Login/Signup Page">
+          <h3>3.1 Log In / Sign Up Page</h3>
+          <img src="LogInSignUpPage.png" alt="LogSign">
+          <p>
+            The first page that opens up when an user acceses the site is the "Log In/Sign Up"
+            page where they will be asked to either log into an existing account using a username
+            and the respective password or create a new account using the former mentioned attributes
+            and an email.
+          </p>
+        </section>
+
+        <section id="Editor/Compiler Page">
+          <h3>3.2 Editor/Compiler Page</h3>
+          <img src="EditorPage.png" alt="Editor">
+          <p>
+            After the user is logged in, the next page that opens up is the editor/compiler one.
+            If the user has just created a new account then the editor side of the page will
+            display a blank file. If the user has previously worked on something then that file
+            will be on display.
+          </p>
+          <p>
+            Here the user can run and compile a file they choose and get the results on the "OUTPUT"
+            side of the page (like in the example presented in the picture). They do this by clicking the
+            button on the left side. Here they can also check the official documentation for Dafny (the
+            button on the right side).
+          </p>
+          <p>
+            After they are done with working on their program or want to save their work there is a
+            dropdown button on the header named "File" which has the options to save their work on
+            their account, on their personal computer, to delete the current file
+            and also to load another file from their computer onto the website editor. 
+            This can also be done with the "+" button next to the files opened in the editor.
+          </p>
+          <p>
+            Another thing a user can do is check the examples provided by the website by clicking
+            the dropdown button named "Examples" that is next to the "File" one
+            and further develop them.
+          </p>
+        </section>
+
+        <section id="My files Page">
+          <h3>3.1 My files Page</h3>
+          <img src="MyFilesPage.png" alt="Myfiles">
+          <p>
+            From the editor page the user can click on their username at the top right side of
+            the page. The next page that opens will be the My files page where they can see
+            all the files they've saved. Here they can open one in the editor, create a new one
+            or load a file from their computer similar to the dropdown "File" from the editor page.
+          </p>
+          <p>
+            Here they could also choose to go to their settings or log out.
+          </p>
+        </section>
+
+        <section id="Settings Page">
+          <h3>3.1 Settings Page</h3>
+          <img src="SettingsPage.png" alt="Settings">
+          <p>
+            Coming from the files page, here the user can change anything about their profile: profile
+            picture, username, email and password.
+          </p>
+          <p>
+            Again they could also choose to go to their files page or log out.
+          </p>
+        </section>
+
+      </section>
+      <section id="Concepts">
+
+        <h2>3. Concepts</h2>
+
+        <section id="Design patterns">
+          <h3>3.1 Design Patterns</h3>
+          <ul>
+            <li>
+              Syntax Highlighting - In the editor page, writing code with little to no syntax highlighting is really
+              difficult and after some time it could cause eyestrain
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Line Numbering - In the editor page the code lines are numbered making searching for
+              errors and bugs easier
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Navigation - In the files page the user can search for a file using the
+              search bar
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Keyboard Shortcuts - At the top of the "Run" button the shortcut for the same function
+              is written because the website contains repetitive tasks that involves switching
+              modes from keyboard to mouse (writing code to running it)
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Autosaving - At the top of the files header there is specified that the files are
+              autosaved every 30 seconds and that helps the user focus on producing great
+              content without worrying about whether their data is safe and saved
+            </li>
+          </ul>
+
+
+
+        </section>
+        <section id="QOC">
+
+          <h2>4. Questions, Options, Criteria</h2>
+
+          <h3>4.1 Q: What happens if the website is used from a mobile?</h3>
+
+          <p> Because on the larger screens in the main page the editor part and the output/terminal
+            part are side by side on a smaller screen they will be stacked upon one another.
+          </p>
+
+          <h3>4.2 Q: What if the user has too many files saved on his account and can't find one?</h3>
+
+          <p>
+            The search bar was created for this and also in the example picture it is visible that
+            in the rectangle associated with file_1 you can see a portion of the code saved in that
+            same file. That is because the user may remember what the file contained just from the
+            snapshot of the code.
+          </p>
+
+
+          <h3>4.3 Q: What if the user can't see the code they are writing clearly?</h3>
+
+          <p>
+            For this potential issue the editor uses syntax highlighting and also line numbering.
+            Besides, they may also zoom in on the code using zoom in and zoom out icons on the right
+            side of the editor.
+          </p>
+
+        </section>
+
+        <section typeof="sa:ReferenceList" id="References">
+          <h2>5 References</h3>
+            <dl>
+              <dd id="ref-nyt" typeof="schema:ScholarlyArticle" resource="https://github.com/rick4470/IEEE-SRS-Tempate">
+                <cite property="schema:name"><a href="https://github.com/rick4470/IEEE-SRS-Tempate">The IEEE Template
+                    for System Requirement Specification Documents
+                  </a></cite>,
+                by
+                <span property="schema:author" typeof="schema:Person">
+                  <span property="schema:name">IEEE Template for System Requirement Specification Documents</span>
+                </span>;
+              </dd>
+              <dd id="ref-sa-ontology" typeof="schema:ScholarlyArticle"
+                resource="https://w3c.github.io/scholarly-html/">
+                <cite property="schema:name"><a href="https://w3c.github.io/scholarly-html/">The
+                    Scholarly Article </a></cite>,
+                by
+                <span property="schema:author" typeof="schema:Person">
+                  <span property="schema:name">Scholarly HTML</span>
+                </span>;
+              </dd>
+
+              <dd property="schema:citation" typeof="schema:WebSite" resource="https://ui-patterns.com/patterns">
+                <cite property="schema:name">
+                  <a href="https://ui-patterns.com/patterns">UI Design Patterns</a>
+                </cite>
+              </dd>
+
+            </dl>
+        </section>
+      </section>
+
+</body>
+
+</html>
